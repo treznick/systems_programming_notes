@@ -7,4 +7,8 @@ TA: Victor
 
 first half - programming concurrent programming with shared threads
 	- use SHA1 encryption
-	
+
+http://eliza.newhaven.edu/sysprog/
+
+use home email for contact/submission, not work email
+
