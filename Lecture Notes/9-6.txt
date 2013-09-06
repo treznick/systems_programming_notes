@@ -1,0 +1,10 @@
+Intensive writing class:
+9 programs over the course of the term
+
+TA: Victor
+
+500 line programs
+
+first half - programming concurrent programming with shared threads
+	- use SHA1 encryption
+	
