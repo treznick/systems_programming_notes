@@ -1,0 +1,25 @@
+# Rule for building a .o file from a .cpp source file -------
+.SUFFIXES: .cpp
+.cpp.o:
+	g++ -c $(CXXFLAGS) $<
+
+# Compile with debug option and all warnings on. ------------
+CXXFLAGS = -g -Wall -I../..
+
+# Object modules comprising this application ----------------
+OBJ = main.o linear.o tools.o 
+
+contain: $(OBJ)
+	g++  -o multi $(CXXFLAGS) $(OBJ)
+
+# Delete .o and exe files and force recompilation. ----------
+clean:
+	rm -f $(OBJ) contain
+
+# Use tools source file from grandparent directory ----------
+tools.o:   ../../tools.cpp ../../tools.hpp
+	g++ -c $(CXXFLAGS) ../../tools.cpp -o tools.o
+
+# Dependencies ----------------------------------------------
+main.o: main.cpp item.hpp ordered.hpp list.hpp pqueue.hpp ../../tools.hpp
+linear.o: linear.cpp linear.hpp contain.hpp cell.hpp ../../tools.hpp
