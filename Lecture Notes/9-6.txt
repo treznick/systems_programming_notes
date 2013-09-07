@@ -12,3 +12,31 @@ http://eliza.newhaven.edu/sysprog/
 
 use home email for contact/submission, not work email
 
+for compilation:
+
+clang++ -oW <executable name> -std=C++11 *.cpp
+	- -o set an object file
+	- -W shows all warnings
+	- -std specifies the standard
+	- *.cpp is a glob pattern that matches 'anything'.cpp
+
+to redirect output to a file:
+
+cin:	<
+cout:	>
+cerr:	2>
+
+ls -al > <filename>
+
+where > redirects the output of ls -al from stdout to a file
+
+you can also redirect stderr using 2>
+
+or both using &>
+
+cout is buffered,
+
+cerr is not
+
+use cerr for error comments, use cout for output
+
