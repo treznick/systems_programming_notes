@@ -1,0 +1,39 @@
+total 40
+-rw-r--r--@ 1 treznick  staff   3112 Sep 10 15:50 HW1.1
+-rwxr-xr-x  1 treznick  staff  10532 Sep 12 17:06 TomP1
+-rw-r--r--  1 treznick  staff      0 Sep 12 17:07 TomP1.txt
+-rw-r--r--  1 treznick  staff      0 Sep 12 16:55 dummy1.bak
+-rw-r--r--  1 treznick  staff      0 Sep 12 16:55 dummy2.bak
+-rw-r--r--  1 treznick  staff      0 Sep 12 16:55 dummy3.bak
+-rw-r--r--@ 1 treznick  staff   1068 Sep 12 17:04 main.cpp
+-----------------------------
+command	./TomP1
+-----------------------------
+command	./TomP1
+switch	-o
+argument	myCommand
+argument	myMain.c
+argument	myClass.c
+-----------------------------
+command	./TomP1
+argument	w/java
+argument	bash-3.2
+argument	ls
+switch	-l
+-----------------------------
+command	./TomP1
+switch	-au
+switch	--verbose
+argument	w/java/
+argument	kira:w/java/
+-----------------------------
+command	./TomP1
+switch	-i
+argument	CSCI 6657
+argument	*.html
+-----------------------------
+command	./TomP1
+argument	dummy1.bak
+argument	dummy2.bak
+argument	dummy3.bak
+argument	*.log
